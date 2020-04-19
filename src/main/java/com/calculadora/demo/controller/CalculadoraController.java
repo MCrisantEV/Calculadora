@@ -23,13 +23,13 @@ public class CalculadoraController {
   @GetMapping("/multiplicacion")
   public Result multiplicacion(@RequestParam(name = "number1") float number1, @RequestParam(name = "number2") float number2) {
     float result = number1 * number2;
-    return new Result("Resta", number1, number2, result);
+    return new Result("Multiplicacion", number1, number2, result);
   }
 
   @GetMapping("/division")
   public Result division(@RequestParam(name = "number1") float number1, @RequestParam(name = "number2") float number2) {
     float result = number1 / number2;
-    return new Result("Resta", number1, number2, result);
+    return new Result("Division", number1, number2, result);
   }
 
 }
